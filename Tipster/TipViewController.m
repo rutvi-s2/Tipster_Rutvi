@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.customTip.alpha = 0;
+    [self.billAmountField becomeFirstResponder];
     // Do any additional setup after loading the view.
 }
 - (IBAction)onTap:(id)sender {
