@@ -16,17 +16,17 @@
 @property (weak, nonatomic) IBOutlet UIView *billBackground;
 @property (weak, nonatomic) IBOutlet UITextField *customTip;
 @property (weak, nonatomic) IBOutlet UILabel *numPeople;
-
 - (IBAction)stepperUpdate:(UIStepper *)sender;
 
 @end
 
 @implementation TipViewController
-
+double doubleValue;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.customTip.alpha = 0;
     [self.billAmountField becomeFirstResponder];
+    double doubleValue = 0.15;
     // Do any additional setup after loading the view.
 }
 - (IBAction)onTap:(id)sender {
@@ -48,7 +48,7 @@
     [self doCalculations];
 }
 -(void)doCalculations{
-    double tipPercentages[] = {0.15, 0.2, 0.25, ([self.customTip.text doubleValue] * 0.01)};
+    double tipPercentages[] = {doubleValue, 0.20, 0.25, ([self.customTip.text doubleValue] * 0.01)};
     double tipPercentage = tipPercentages[self.tipPercentageControl.selectedSegmentIndex];
     int split = [self.numPeople.text doubleValue];
     double bill = [self.billAmountField.text doubleValue];
@@ -89,6 +89,12 @@
             self.billBackground.alpha = 1;
         }];
     }
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    doubleValue = [defaults doubleForKey:@"default_tip_percentage"] * 0.01;
+    [self doCalculations];
 }
 /*
 #pragma mark - Navigation

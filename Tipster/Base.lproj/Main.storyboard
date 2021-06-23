@@ -28,7 +28,7 @@
                                                 <rect key="frame" x="12" y="0.0" width="370" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <segments>
-                                                    <segment title="15%"/>
+                                                    <segment title="Default"/>
                                                     <segment title="20%"/>
                                                     <segment title="25%"/>
                                                     <segment title="Custom"/>
@@ -124,7 +124,13 @@
                             <outletCollection property="gestureRecognizers" destination="Nfx-AT-hFq" appends="YES" id="bDv-zQ-eZI"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tipster" id="QeC-7u-P89"/>
+                    <navigationItem key="navigationItem" title="Tipster" id="QeC-7u-P89">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="e6w-my-yat">
+                            <connections>
+                                <segue destination="4z3-ad-U6Z" kind="show" id="GDd-0a-kfp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billAmountField" destination="bzI-3F-mfA" id="gJ7-ri-Gbn"/>
                         <outlet property="billBackground" destination="zL6-8W-P2T" id="66E-gA-hqC"/>
@@ -144,6 +150,54 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="135.38461538461539" y="124.40758293838861"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="WVU-cm-XDz">
+            <objects>
+                <viewController id="4z3-ad-U6Z" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHS-xa-YPo">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNy-oa-QB2">
+                                <rect key="frame" x="238" y="133" width="136" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0w-Hp-Dkj">
+                                <rect key="frame" x="127" y="198" width="141" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98776598550000005" green="1" blue="0.8194609907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Set Default Tip">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="defaultButtonActivate:" destination="4z3-ad-U6Z" eventType="touchUpInside" id="bcW-QO-trK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip (in %) :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuA-8Z-xBG">
+                                <rect key="frame" x="16" y="132" width="214" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98776598550000005" green="1" blue="0.8194609907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F45-PV-8ad"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OWx-mq-vAQ"/>
+                    <connections>
+                        <outlet property="defaultAmount" destination="VNy-oa-QB2" id="aGw-xe-odA"/>
+                        <outlet property="defaultButton" destination="S0w-Hp-Dkj" id="mLZ-iS-oBI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udQ-fM-Jni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.76923076923072" y="123.69668246445497"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lcr-fM-buj">

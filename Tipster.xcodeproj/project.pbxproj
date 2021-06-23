@@ -16,6 +16,7 @@
 		492A5E7A268269090022977D /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A5E79268269090022977D /* TipsterTests.m */; };
 		492A5E85268269090022977D /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A5E84268269090022977D /* TipsterUITests.m */; };
 		492A5E942682715E0022977D /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A5E932682715E0022977D /* TipViewController.m */; };
+		492A5E972682C6300022977D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A5E962682C6300022977D /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		492A5E86268269090022977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492A5E922682715E0022977D /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		492A5E932682715E0022977D /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		492A5E952682C6300022977D /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		492A5E962682C6300022977D /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				492A5E6B268269090022977D /* LaunchScreen.storyboard */,
 				492A5E6E268269090022977D /* Info.plist */,
 				492A5E6F268269090022977D /* main.m */,
+				492A5E952682C6300022977D /* SettingsViewController.h */,
+				492A5E962682C6300022977D /* SettingsViewController.m */,
 			);
 			path = Tipster;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			files = (
 				492A5E5F268269080022977D /* AppDelegate.m in Sources */,
 				492A5E70268269090022977D /* main.m in Sources */,
+				492A5E972682C6300022977D /* SettingsViewController.m in Sources */,
 				492A5E942682715E0022977D /* TipViewController.m in Sources */,
 				492A5E62268269080022977D /* SceneDelegate.m in Sources */,
 			);
