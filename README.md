@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Fu54FAg" data-context="false" ><a href="//imgur.com/a/Fu54FAg"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![](Tipster.gif)
 
 GIF created with [Kap](https://getkap.co/).
 
