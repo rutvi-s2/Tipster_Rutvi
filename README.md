@@ -16,18 +16,17 @@ The following **optional** features are implemented:
 
 * [ ] Settings page to change the default tip percentage.
 * [ ] UI animations
-* [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] Displays the individual total in case the bill needs to be split (up to 50 people)
+- [ ] Displays the individual total in case the bill needs to be split (split with up to 50 people)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Fu54FAg" data-context="false" ><a href="//imgur.com/a/Fu54FAg"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 GIF created with [Kap](https://getkap.co/).
 
